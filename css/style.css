@@ -166,15 +166,12 @@ body * {
     .first_step-container__button{
         width: 300px;
     }
-    .header-navigation__item{
-        margin-right: 10px;
-    }
     .header-navigation{
         margin-left: -15px;
     }
     .header-container{
         height: 60px;
-        justify-content: center;
+        justify-content: space-between;
     }
     .fist_step-container__title{
         font-size: 24px;
