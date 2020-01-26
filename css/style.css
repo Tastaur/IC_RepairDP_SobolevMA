@@ -1,0 +1,194 @@
+@font-face{
+    src: url(../fonts/NunitoSans-Regular.ttf);
+    font-family: "Nunito Sans";
+}
+body{
+    font-family: 'Nunito Sans';
+    margin: 0;
+}
+body * {
+    box-sizing: border-box;
+}
+.header{
+    background-color: black;
+    font-size: 11px;
+    line-height: 15px;
+}
+.header-container{
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 83px;
+    align-items: center;
+}
+.header-navigation{
+    display: flex;
+    list-style: none;
+}
+.header-navigation__item{
+    margin-right: 47px;
+    }
+.header-navigation__item a {
+   text-decoration: none;
+   color: white;
+}
+.button {
+    color: white;
+    background: #E3B873;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    border: 0;
+    outline: 0;
+    padding: 13px 33px;
+    font-style: italic;
+}
+.logo{
+    color: #E3B873;
+}
+.logo_phone{
+    color: #E3B873;
+    text-decoration-line: underline;
+}
+.first_step{
+    background-image: url(../images/first_image.jpg);
+    background-size: cover;
+    height: 707px;
+    padding-top: 194px;
+    padding-left: 134px;
+    z-index: 1;
+    position: relative;
+}
+.first_step-background{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+.fist_step-container__title{
+    margin: 0;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+}
+.first_step_rdn{
+    color: #E3B873;
+}
+.first_step-container{
+    z-index: 1;
+    position: relative;
+    color: white;
+}
+.firs_step-container__subtitle{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+}
+.first_step-container__button{
+    font-style: italic;
+    font-size: 11px;
+    color: #FFFFFF;
+    background: #E3B873;
+    border-radius: 2px;
+    border: 0;
+    padding-top: 19px;
+    padding-left: 42px;
+    padding-bottom: 19px;
+    padding-right: 42px;
+    margin-right: 20px;
+    line-height: 15px;
+}
+.button2{
+    border: 1px solid #FFFFFF;
+    padding-top: 16.5px;
+    padding-left: 22px;
+    padding-bottom: 16.5px;
+    padding-right: 23px;
+    background-color: initial;
+}
+@media (max-width: 875px){
+    .first_step-container__divbutton{
+        display: table-caption;
+    }
+    .first_step-container__button{
+        width: 270px;
+    }
+    .button2{
+        margin-top: 15px;
+    }
+    .logo_phone{
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    body {
+        width: 768px;
+    }
+    .header-container{
+        height: 60px;
+        justify-content: space-around;
+    }
+    .button{
+        padding: 10px, 5px;
+    }
+    .first_step{
+        height: 707px;
+        justify-content: center;
+        padding-top: 150px;
+        background-size: 1024px 768px;
+    }
+    .first_step-container__divbutton{
+        display: grid;
+    }
+    .first_step-container__button{
+        width: 500px;
+    }
+}
+@media (max-width: 375px){
+    body {
+        width: 375px;
+    }
+    .logo{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    .first_step-container__button{
+        width: 300px;
+    }
+    .header-navigation__item{
+        margin-right: 10px;
+    }
+    .header-navigation{
+        margin-left: -15px;
+    }
+    .header-container{
+        height: 60px;
+        justify-content: center;
+    }
+    .fist_step-container__title{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .first_step{
+        height: 707px;
+        padding-left: 40px;
+    }
+    .firs_step-container__subtitle{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .first_step-container__button{
+        margin-top: 20px;
+    }
+}
