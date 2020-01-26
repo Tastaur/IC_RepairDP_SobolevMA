@@ -34,6 +34,9 @@ body * {
    text-decoration: none;
    color: white;
 }
+.header-navigation__item :hover {
+    color: #E3B873;
+ }
 .button {
     color: white;
     background: #E3B873;
