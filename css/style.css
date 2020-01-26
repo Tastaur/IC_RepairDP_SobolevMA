@@ -198,7 +198,7 @@ body * {
     }
     .header-navigation{
         margin-left: -15px;
-        width: 375px;
+        max-width: 375px;
     }
     .header-container{
         height: 60px;
