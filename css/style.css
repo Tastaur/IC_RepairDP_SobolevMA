@@ -1,6 +1,8 @@
 @font-face{
     src: url(../fonts/NunitoSans-Regular.ttf);
     font-family: "Nunito Sans";
+    src: url(../fonts/YesevaOne-Regular.ttf);
+    font-family: "Yeseva One";
 }
 body{
     font-family: 'Nunito Sans';
@@ -26,9 +28,10 @@ body * {
 .header-navigation{
     display: flex;
     list-style: none;
+    margin-left: -10px;
 }
 .header-navigation__item{
-    margin-right: 47px;
+    margin-right: 40px;
     }
 .header-navigation__item a {
    text-decoration: none;
@@ -50,10 +53,14 @@ body * {
 }
 .logo{
     color: #E3B873;
+    margin-left: 10px;
 }
 .logo_phone{
     color: #E3B873;
     text-decoration-line: underline;
+    margin-right: 10px;
+    font-style: normal;
+    font-weight: normal;
 }
 .first_step{
     background-image: url(../images/first_image.jpg);
@@ -118,7 +125,7 @@ body * {
 }
 .first_step-container__button:hover{
     background-color: #E3B873;
-    border: 0;
+    border-color: transparent;
 }
 /* start second step */
 /* .second_step{
@@ -160,9 +167,6 @@ body * {
     .button2{
         margin-top: 15px;
     }
-    .logo_phone{
-        display: none;
-    }
 }
 @media (max-width: 768px){
     body {
@@ -173,8 +177,7 @@ body * {
         justify-content: space-around;
     }
     .button{
-        padding: 1px, 1px;
-        box-shadow: 0px 3px 5px rgba(227, 184, 115, 0.2);
+       display: none;
     }
     .first_step{
         height: 707px;
@@ -196,18 +199,14 @@ body * {
     body {
         width: 375px;
     }
-    .logo{
-        display: none;
-    }
     .button{
         display: none;
     }
     .first_step-container__button{
-        width: 300px;
+        width: 338px;
     }
     .header-navigation{
-        margin-left: -20px;
-        max-width: 375px;
+        display: none;
     }
     .header-container{
         height: 60px;
@@ -218,14 +217,24 @@ body * {
         line-height: 30px;
     }
     .first_step{
-        height: 707px;
-        padding-left: 40px;
+        height: 476px;
+        padding-left: 18px;
+        padding-top: 85px;
+        background-image: url(../images/first_image_mobile.png);
+        background-size: cover;
     }
     .firs_step-container__subtitle{
-        font-size: 13px;
-        line-height: 20px;
+        font-size: 14px;
+        line-height: 135.84%;
     }
     .first_step-container__button{
         margin-top: 20px;
     }
+    .first_step-background{
+        width: 375px;
+    }
+    .logo_phone{
+        color: white;
+        text-decoration-line: none;
+        margin-right: 10px;
 }
