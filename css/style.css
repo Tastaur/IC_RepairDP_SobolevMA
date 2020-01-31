@@ -7,7 +7,8 @@
 body{
     font-family: 'Nunito Sans';
     margin: 0;
-    max-width: 1440px;
+    width: 1440px;
+    color: white;
 }
 body * {
     box-sizing: border-box;
@@ -41,7 +42,6 @@ body * {
     color: #E3B873;
  }
 .button {
-    color: white;
     background: #E3B873;
     text-transform: uppercase;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
@@ -50,10 +50,10 @@ body * {
     outline: 0;
     padding: 13px 33px;
     font-style: italic;
+    color: white;
 }
 .logo{
     color: #E3B873;
-    margin-left: 10px;
 }
 .logo_phone{
     color: #E3B873;
@@ -95,10 +95,8 @@ body * {
 .first_step-container{
     z-index: 1;
     position: relative;
-    color: white;
 }
 .firs_step-container__subtitle{
-    font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -128,7 +126,7 @@ body * {
     border-color: transparent;
 }
 /* start second step */
-/* .second_step{
+.second_step{
     background: #131313;
     height: 1074px;
 }
@@ -138,24 +136,73 @@ body * {
 .second_step-container-navigation{
     display: flex;
     list-style: none;
-    margin-left: 630px;
+    margin-left: 600px;
 }
 .second_step-container-navigation__item a{
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.3);
     margin-right: 60px;
+    width: max-content;
 }
 .second_step-container-navigation__item a:hover{
     color: #E3B873;
     border-bottom: 1px #E3B873 solid;
     padding-bottom: 4px;
-} */
+}
+.second_step-container-container{
+    display: flex;
+    margin-left: 134px;
+}
+.second_step_first_image{
+    margin-right: 120px;
+    margin-top: 30px;
+}
+.second_step-container-container-content_title{
+    font-family: Yeseva One;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    color: #E3B873;
+    font-weight: normal;
+}
+.second_step-container-container-content_subtitle{
+    font-size: 14px;
+    line-height: 27px;
+    width: 432px;
+}
+.second_step-container-container-content{
+    margin-right: 72px;
+}
+.second_step-container-container-content-detail{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+.second_step-container-container-content-detail-content_title{
+    font-family: Yeseva One;
+    font-size: 18px;
+    line-height: 25px;
+    color: #E3B873;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 9px;
+    margin-top: 34px;
+}
+.second_step-container-container-content-detail-content_subtitle{
+    font-family: Nunito Sans;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-style: normal;
+}
+.rep{
+    margin-top: 13px;
+}
+
 /* start development mobile version */
 @media (max-width: 875px){
     .first_step-container__divbutton{
@@ -237,4 +284,5 @@ body * {
         color: white;
         text-decoration-line: none;
         margin-right: 10px;
+    }
 }
