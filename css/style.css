@@ -201,8 +201,8 @@ body * {
 }
 .rep{
     margin-top: 13px;
-}
- */
+} */
+
 /* start development mobile version */
 @media (max-width: 875px){
     .first_step-container__divbutton{
@@ -284,5 +284,8 @@ body * {
         color: white;
         text-decoration-line: none;
         margin-right: 10px;
+    }
+    .logo{
+        margin-left: 10px;
     }
 }
