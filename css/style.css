@@ -502,7 +502,7 @@ body * {
     justify-content: center;
     background-image: url(../images/contact_background.jpg);
     background-size: cover;
-    box-shadow: 1000px 2000px 1000px rgba(0, 0, 0, 0.993) inset
+    box-shadow: 500px 900px 500px rgba(0, 0, 0, 0.7) inset
 }
 .contacts-container{
     display: flex;
@@ -531,7 +531,7 @@ body * {
 .contacts_map{
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 .contacts-container-form_label{
     text-align: start;
