@@ -32,6 +32,10 @@ body * {
     font-style: normal;
     font-weight: normal;
 }
+.checkbox{
+    text-align: center;
+    margin-bottom: 20px;
+}
 .header-container{
     max-width: 1250px;
     margin: 0 auto;
@@ -237,6 +241,11 @@ body * {
     flex-direction: column;
     text-align: -webkit-center;
 }
+.control-container_text_input{
+    font-size: 14px;
+    line-height: 163.68%;
+    color: black;
+}
 .control-container_line{
     border-top: 2px solid #E3B873;
     border-bottom: 0;
@@ -274,11 +283,14 @@ body * {
     width: 400px;
 }
 .check{
-    display: inline-block;
-    width: 18px;
-    height: 18px;
     border: 1px solid #E3B873;
     border-radius: 2px;  
+}
+.checkbox-container input:checked + span::before{
+    background-image: url(../images/check.png);  
+}
+.repair-label{
+    align-self: left;
 }
 .control-container_form_input{
     font-size: 14px;
@@ -336,10 +348,8 @@ body * {
     color: #959595;
 }
 .repair_button{
-    margin: 0;
     padding: 0;
-    margin-top: 15px;
-    font-style: normal;
+
 }
 /* question */
 .repair-question{
@@ -424,8 +434,10 @@ body * {
 }
 .repair_button{
     width: 210px;
-    margin-left: 20px;
+    margin-left: 180px;
     height: 51px;
+    margin-top: 15px;
+    font-style: normal;
 }
 .repair-container_label{
     font-size: 14px;
