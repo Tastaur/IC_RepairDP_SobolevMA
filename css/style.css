@@ -8,7 +8,8 @@ font-family: 'YesevaOne';
 }
 body{
     margin: 0;
-    width: 1440px;
+    box-sizing: border-box;
+
 }
 body * {
     box-sizing: border-box;
@@ -84,6 +85,7 @@ body * {
     z-index: 1;
     position: relative;
     color: white;
+    
 }
 .home-background{
     content: "";
@@ -98,6 +100,7 @@ body * {
     margin: 0;
     font-size: 40px;
     line-height: 53px;
+    
 }
 .home_rdn{
     color: #E3B873;
@@ -105,6 +108,9 @@ body * {
 .home-container{
     z-index: 1;
     position: relative;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .firs_step-container__subtitle{
     font-size: 22px;
@@ -138,14 +144,17 @@ body * {
     background: #131313;
     height: 1074px;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 .project-container{
     padding-top: 107px;
+    max-width: 1440px;
 }
 .project-container-navigation{
     display: flex;
     list-style: none;
-    margin-left: 600px;
+    margin-left: 45%;
 }
 .project-container-navigation__item a{
     font-size: 14px;
@@ -163,10 +172,9 @@ body * {
 }
 .project-container-container{
     display: flex;
-    margin-left: 134px;
+    justify-content: center;
 }
 .project_first_image{
-    margin-right: 120px;
     margin-top: 30px;
 }
 .project-container-container-content_title{
@@ -185,7 +193,7 @@ body * {
 }
 .project-container-container-content-detail{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 350px;
 }
 .project-container-container-content-detail-content_title{
@@ -208,12 +216,12 @@ body * {
     margin-top: -300px;
     color: white;
     display: flex;
-    width: 1440px;
     margin-bottom: 80px;
+    justify-content: center;
 }
 .control-container_img{
     margin-top: 30px;
-    margin-left: 309px;
+    align-self: center;
 }
 .control-container_img_backgound{
     background: rgba(0, 0, 0, 0.8);
@@ -223,8 +231,11 @@ body * {
     z-index: 1;
     position: relative;
 }
-.camera{
-    margin-left: 640px;
+.control-container{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: -webkit-center;
 }
 .control-container_line{
     border-top: 2px solid #E3B873;
@@ -232,7 +243,6 @@ body * {
     border-left: 0;
     border-right: 0;
     border-radius: 30px;
-    margin-left: 680px;
     margin-top: 60px;
     width: 55px;
 }
@@ -242,10 +252,8 @@ body * {
     text-align: center;
     color: #363636;
     width: 681px;
-    margin-left: 377px;
 }
 .control-container_form{
-    margin-left: 333px;
     width: 769px;
     display: flex;
     margin-bottom: 30px;
@@ -256,6 +264,21 @@ body * {
     line-height: 21px;
     color: rgba(54, 54, 54, 0.5);
     width: 300px;
+    text-align: start;
+}
+.control-container_label{
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    color: #363636;
+    width: 400px;
+}
+.check{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #E3B873;
+    border-radius: 2px;  
 }
 .control-container_form_input{
     font-size: 14px;
@@ -274,6 +297,10 @@ body * {
 }
 /* start repair section */
 .repair{
+    justify-content: center;
+    display: grid;
+}
+.repair-container{
     max-width: 1440px;
 }
 .repair-container_title{
@@ -290,10 +317,8 @@ body * {
     margin-bottom: 30px;
 }
 .repair-container-container{
-    margin-left: 100px;
     display: flex;
     justify-content: space-between;
-    margin-right: 100px;
 }
 .repair-conntainer-container-content-text_title{
     margin-top: -130px;
@@ -311,24 +336,24 @@ body * {
     color: #959595;
 }
 .repair_button{
-    margin-left: 31px;
+    margin: 0;
+    padding: 0;
     margin-top: 15px;
     font-style: normal;
 }
 /* question */
 .repair-question{
     display: flex;
+    justify-content: center;
 }
 .repair-question-content{
     height: 600px;
     width: 500px;
-    max-width: 1440px;
 }
 .repair-question-content_img{
     z-index: -5;
 }
 .repair-question-content_table{
-    display: flex;
     flex-direction: column;
     margin-left: -450px;
     margin-top: 100px;
@@ -367,7 +392,7 @@ body * {
     width: 500px;
     height: 500px;
     margin-top: 100px;
-    margin-left: -300px;
+    margin-left: -430px;
     padding-top: 28px;
     padding-left: 50px;
     padding-right: 50px;
@@ -399,19 +424,24 @@ body * {
 }
 .repair_button{
     width: 210px;
-    margin-left: 200px;
+    margin-left: 20px;
     height: 51px;
 }
+.repair-container_label{
+    font-size: 14px;
+    line-height: 37px;
+    text-align: start;
+    color: white;
+}
 .piggy_image{
-    margin-left: 930px;
+    margin-left: 60%;
 }
 
 /* client's section */
-.client{
-    max-width: 1440px;
-}
+
 .client-container{
     margin-top: 80px;
+    margin-bottom: 150px;
 }
 .client-container_title{
     font-size: 20px;
@@ -430,12 +460,12 @@ body * {
 .client-container-content{
     margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .client-container-content_block{
     width: 376px;
     max-width: 376px;
-    margin-left: 50px;
+    margin-left: 80px;
 }
 .client-container-content_block_head{
     display: flex;
@@ -456,17 +486,112 @@ body * {
     text-transform: lowercase;
     width: 324px;
 }
+.client-container-content_button{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 24px;
+    margin-right: -2px;
+    margin-bottom: 150px;
+}
+/* contacts section */
+.contacts{
+    height: 900px;
+    background-color: black;
+    display: block;
+    justify-content: center;
+    background-image: url(../images/contact_background.jpg);
+    background-size: cover;
+    box-shadow: 1000px 2000px 1000px rgba(0, 0, 0, 0.993) inset
+}
+.contacts-container{
+    display: flex;
+    justify-content: center;
+}
+.contacts-container-form{
+    margin-top: -230px;
+    background-color: black;
+    color: white;
+    width: 900px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 35px;
+    padding-left: 180px;
+    padding-bottom: 35px;
+    padding-right: 180px;
+}
+.contacts_icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.contacts_map{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.contacts-container-form_label{
+    text-align: start;
+    margin-right: 120px;
+    margin-bottom: 50px;
+}
+.contact-container_title{
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 50px;
+    color: #E3B873;
+}
+.contacts-container-form_label_input_bottom{
+    width: 580px;
+    background: initial;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.contacts-container-form_label_input{
+    width: 230px;
+    background: initial;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.contacts-container-form-line{
+    display: flex;
+}
+.contacts-container-form_button{
+    width: 200px;
+    height: 51px;
+}
+.contacts-container-form_title{
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+.contacts-container-form_label_agree{
+    align-self: flex-end;
+    text-align: start;
+    margin-right: 120px;
+    margin-bottom: 50px;
+}
+.contacts-container-form_button{
+    align-self: center;
+}
 /* footer */
 .footer{
     background-color: black;
     font-size: 11px;
     line-height: 15px;
     color: white;
-    margin-top: 100px;
 }
 
 /* start development mobile version */
-@media (max-width: 875px){
+/* @media (max-width: 875px){
     .home-container__divbutton{
         display: table-caption;
     }
@@ -550,4 +675,4 @@ body * {
     .logo{
         margin-left: 10px;
     }
-}
+} */
