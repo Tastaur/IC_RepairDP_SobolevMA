@@ -605,49 +605,11 @@ body * {
 }
 
 /* start development mobile version */
-/* @media (max-width: 875px){
-    .home-container__divbutton{
-        display: table-caption;
-    }
-    .home-container__button{
-        width: 270px;
-    }
-    .button2{
-        margin-top: 15px;
-    }
-}
-@media (max-width: 768px){
-    body {
-        width: 768px;
-    }
-    .header-container{
-        height: 60px;
-        justify-content: space-around;
-    }
-    .button{
-       display: none;
-    }
-    .home{
-        height: 707px;
-        justify-content: center;
-        padding-top: 150px;
-        background-size: 1024px 768px;
-    }
-    .home-container__divbutton{
-        display: grid;
-    }
-    .home-container__button{
-        width: 500px;
-    }
-    .header-navigation__item{
-        margin-right: 10px;
-    }
-}
 @media (max-width: 375px){
     body {
-        width: 375px;
+        max-width: 375px;
     }
-    .button{
+    .button_header{
         display: none;
     }
     .home-container__button{
@@ -658,7 +620,7 @@ body * {
     }
     .header-container{
         height: 60px;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .fist_step-container__title{
         font-size: 24px;
@@ -674,6 +636,7 @@ body * {
     .firs_step-container__subtitle{
         font-size: 14px;
         line-height: 135.84%;
+        margin-bottom: 50px;
     }
     .home-container__button{
         margin-top: 20px;
@@ -689,4 +652,129 @@ body * {
     .logo{
         margin-left: 10px;
     }
-} */
+    .project-container{
+        max-width: 375px;
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    .project-container-navigation{
+        display: none;
+    }
+    .project_first_image{
+        width: 340px;
+        height: 240px;
+        margin-left: 20px;
+    }
+      .project-container-container{
+        flex-direction: column;
+    }
+    .project-container-container-content_subtitle{
+        width: 350px;
+        font-size: 11px;
+        line-height: 158.48%;
+        margin-left: 10px;
+        text-align: center;
+    }
+    .project-container-container-content_title{
+        text-align: center;
+    }
+    .control-container_img_backgound{
+        width: 321px;
+        height: 171px;
+        margin-top: -174px;
+    }
+    .control-img{
+        width: 320px;
+    }
+    .project{
+        height: 974px;
+    }
+    .control-container_text{
+        width: 320px;
+        font-size: 11px;
+        line-height: 169.8%;
+        color: white;
+    }
+    .control-container{
+        background-color: black;
+    }
+    .control-container_form {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+    }
+    .control-container_form_input {
+        width: 200px;
+        background-color: initial;
+        color: white;
+        border-bottom: 2px solid rgba(54, 54, 54, 0.3);    }
+    .control-container_form_label {
+        color: white;
+    }
+    .control-container_text_input{
+        color: white;
+    }
+    .control-container_form_label_button{
+        order: 2;
+    }
+    .repair_image{
+        width: 340px;
+        height: 350px;
+    }
+    .repair-conntainer-container-content-text_title {
+        margin-left: 0px;
+    }
+    .repair-container {
+        max-width: 375px;
+        margin-left: 64px;
+    }
+    .repair-container-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .repair_button{
+        margin-left: 0px;
+        margin-bottom: 60px;
+    }
+    .repair-question{
+        display: none;
+    }
+    .piggy_image{
+        display: none;
+    }
+    .client{
+        display: none;
+    }
+    .contacts-container-form {
+        margin-top: 0;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        padding-right: 0px;
+    }
+    .contacts-container-form_label {
+        text-align: center;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+    .contacts-container-form-line {
+        display: flex;
+        flex-direction: column;
+    }
+    .contacts-container-form_label_input_bottom {
+        width: 230px;
+    }.contacts-container-form_label_agree {
+        margin-right: 0px;
+    }
+    .contacts-container-form_button {
+        width: 350px;
+    }
+    .footer_button{
+        display: none;
+    }
+    .map{
+        width: 320px;
+    }
+}
