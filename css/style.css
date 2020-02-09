@@ -720,7 +720,7 @@ body * {
         order: 2;
     }
     .repair_image{
-        width: 340px;
+        width: 320px;
         height: 350px;
     }
     .repair-conntainer-container-content-text_title {
@@ -728,7 +728,6 @@ body * {
     }
     .repair-container {
         max-width: 375px;
-        margin-left: 64px;
     }
     .repair-container-container {
         display: flex;
@@ -776,5 +775,6 @@ body * {
     }
     .map{
         width: 320px;
+        height: 161px;
     }
 }
