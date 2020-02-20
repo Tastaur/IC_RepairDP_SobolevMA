@@ -23,9 +23,9 @@
                     <li class="header-navigation__item"><a href="#">CONTATS</a></li>
                 </ul>
             </nav>
-            <div class="logo_phone">
+            <a class="logo_phone">
                 +7 (928) 768-32-39
-            </div>
+            </a>
             <button class="button button_header">Request a call</button>
         </div>
     </header>
@@ -74,18 +74,30 @@
                             <span class="project-container-container-content-detail-content_subtitle subtitle">Upon request</span>
                         </div>
                     </div>
+                    <div class="change_image">
+                        <img src="images/arrow_left.svg" alt="">
+                        <img src="images/circle.png" alt="">
+                        <img src="images/circle.png" alt="">
+                        <img src="images/circle.png" alt="">
+                        <img src="images/arrow.right.svg" alt="">
+                    </div>
                 </div>
-               <img  class="project_first_image"src="images\second_1.png" alt="Good_photo">
+               <div  class="project_first_image">
+                   <img src="images/arrowOnLeft.png"  class = "change_arrow"alt="">
+                   <img src="images/arrowonRight.png" class = "change_arrow" alt="">
+
+               </div>
             </div>
         </div>
     </section>
     <!-- third section -->
     <section class="control">
         <div class="control-container">
-           <img class="camera" src="images\camera.svg" alt="camera">
+            <h2 class="control-container_title title">ONLINE CONTROL</h2>
+           <img class="camera" src="images\camera.png" alt="camera">
             <div class="control-container_img">
             <img  src="images\third_1.png" class="control-img" alt="">
-            <div class="control-container_img_backgound"></div>
+            <div class="control-container_img_backgound"> <img class="play" src="images/play.svg" alt="play" ></div>
             </div>
             <hr class="control-container_line">
             <p class="control-container_text subtitle">
@@ -120,7 +132,7 @@
                             <li class="repair-conntainer-container-content-text_subitle subtitle">Replacing sockets and switches</li>
                             <li class="repair-conntainer-container-content-text_subitle subtitle">Replacing doors</li>
                         </ul>
-                        <button class="repair_button button title">from 900 rub / m2</button>
+                        <div class="repair_button button title">from 900 rub / m2</div>
                     </div>
                 </div>
                 <!-- 2 -->
@@ -136,7 +148,7 @@
                             <li class="repair-conntainer-container-content-text_subitle subtitle">Replacing sockets and switches</li>
                             <li class="repair-conntainer-container-content-text_subitle subtitle">Replacing doors</li>
                         </ul>
-                        <button class="repair_button button title">from 1800 rub / m2</button>
+                        <div class="repair_button button title">from 1800 rub / m2</div>
                     </div>
                 </div>
                 <!-- 3 -->
@@ -152,31 +164,32 @@
                             <li class="repair-conntainer-container-content-text_subitle subtitle">Replacing sockets and switches</li>
                             <li class="repair-conntainer-container-content-text_subitle subtitle">Replacing doors</li>
                         </ul>
-                        <button class="repair_button button title">from 4000 rub / m2</button>
+                        <div class="repair_button button title">from 4000 rub / m2</div>
                     </div>
                 </div>
             </div>
             <div class="repair-question">
-                <img class="repair-question-content_img"src="images\background_question.png" alt="">
                 <div class="repair-question-content">
-                    <div class="repair-question-content_table">
-                        <div class="repair-question-content_table_line">
-                            <div class="repair-question-content_icons"><p class="repair-question-content_icons_text title">01</p></div>
-                            <p class="repair-question-content_text subtitle">Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</p>
-                        </div>
-                        <div class="repair-question-content_table_line">
-                            <div class="repair-question-content_icons"><p class="repair-question-content_icons_text title">02</p></div>
-                            <p class="repair-question-content_text subtitle">Free metering </p>
-                        </div>
-                        <div class="repair-question-content_table_line">
-                            <div class="repair-question-content_icons"><p class="repair-question-content_icons_text title">03</p></div>
-                            <p class="repair-question-content_text subtitle">Free consultation </p>
-                        </div>
-                        <div class="repair-question-content_table_line">
-                            <div class="repair-question-content_icons"><p class="repair-question-content_icons_text title">04</p></div>
-                            <p class="repair-question-content_text subtitle">Get a cost estimate <br> and the timing of your future repairs</p>
-                        </div>
-                    </div>
+                   <table class="repair-question-content-table">
+                       <tr>
+                       <td><img src="images/01.png" alt=""></td>
+                       <td class="subtitle repair-question-content-table_text">Our specialist will arrive for measurements per day
+                        contact, or appoint a date convenient for you</td>
+                       </tr>
+                       <tr>
+                        <td><img src="images/02.png" alt=""></td>
+                        <td class="subtitle repair-question-content-table_text">Free metering</td>
+                        </tr>
+                        <tr>
+                        <td><img src="images/03.png" alt=""></td>
+                        <td class="subtitle repair-question-content-table_text">Free consultation</td>
+                        </tr>
+                        <tr>
+                        <td><img src="images/04.png" alt=""></td>
+                        <td class="subtitle repair-question-content-table_text">Get a cost estimate and <br> the timing of your future repairs</td>
+                        </tr>
+     
+                   </table>
                 </div>
                 <form class="repair-question-form subtitle" action=""> Leave a request for free <br> departure of the measurer 
                     <label class="repair-question-form_label subtitle" for="Name">Name <br><input class="repair-question-form_input subtitle" placeholder="What is your name"></label>
@@ -185,7 +198,7 @@
                     <label class="checkbox-container">
                         <input class="checkbox" type="checkbox" class="check" name="" id=""><span class="repair-question-form_input subtitle" for="check"> I agree to the processing of personal data</span>
                         </label>
-                    <button class="repair_button button">Call the measurer</button>
+                    <button class="repair_form_button button">Call the measurer</button>
                 </form>
             </div>
         </div>
@@ -241,12 +254,13 @@
                 <button class="contacts-container-form_button button">SUBMIT</button>
             </form>
             </div>
+            <div class="contact-container-bottom">
             <p class="contact-container_title title">ROSTOV-ON-DON, NANSEN ST., 239 SHOPPING CENTER <br> DECORUM TEL +7 (928) 768 32 29</p>
-            <div class="contacts_icons">
+        <div class="contacts_icons">
             <img src="images/contact_mail.png" alt="">
             <img src="images/contact_inst.png" alt="">
         </div>
-            <div class="contacts_map"><img src="images/contact_map.png" class="map" alt="">
+            <div class="contacts_map"><img src="images/contact_map.png" class="map" alt=""></div>
         </div>
     </section>
     <footer class="footer">
@@ -264,9 +278,9 @@
                     <li class="header-navigation__item"><a href="#">CONTATS</a></li>
                 </ul>
             </nav>
-            <div class="logo_phone">
+            <a class="logo_phone">
                 +7 (928) 768-32-39
-            </div>
+            </a>
             <button class="button footer_button">Request a call</button>
         </div>
     </footer>

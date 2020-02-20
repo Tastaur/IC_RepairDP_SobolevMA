@@ -55,6 +55,7 @@ body * {
 .header-navigation__item a {
    text-decoration: none;
    color: white;
+   font-family: 'Nunito Sans';
 }
 .header-navigation__item :hover {
     color: #E3B873;
@@ -69,6 +70,7 @@ body * {
     padding: 13px 33px;
     font-style: italic;
     color: white;
+    cursor: pointer;
 }
 .logo{
     color: #E3B873;
@@ -79,6 +81,7 @@ body * {
     margin-right: 10px;
     font-style: normal;
     font-weight: normal;
+    cursor: pointer;
 }
 .home{
     background-image: url(../images/first_image.jpg);
@@ -180,12 +183,25 @@ body * {
 }
 .project_first_image{
     margin-top: 30px;
+    background-image: url(../images/second_1.png);
+    background-size: cover;
+    width: 680px;
+    height: 482px;
+}
+.change_arrow{
+    display: none;
 }
 .project-container-container-content_title{
     font-size: 27px;
     line-height: 37px;
     letter-spacing: -0.07em;
     color: #E3B873;
+}
+.change_image{
+    width: 200px;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 140px;
 }
 .project-container-container-content_subtitle{
     font-size: 14px;
@@ -197,7 +213,7 @@ body * {
 }
 .project-container-container-content-detail{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 350px;
 }
 .project-container-container-content-detail-content_title{
@@ -235,8 +251,11 @@ body * {
     z-index: 1;
     position: relative;
 }
+.play{
+    margin-top: 140px;
+}
 .control-container{
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     text-align: -webkit-center;
@@ -347,54 +366,27 @@ body * {
     line-height: 27px;
     color: #959595;
 }
-.repair_button{
-    padding: 0;
 
-}
 /* question */
 .repair-question{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
+
 .repair-question-content{
     height: 600px;
-    width: 500px;
+    width: 624px;
+    background-image: url(../images/background_question.png);
 }
-.repair-question-content_img{
-    z-index: -5;
+.repair-question-content-table{
+    margin-left: 150px;
+    margin-top: 78px;
+    height: 506px;
 }
-.repair-question-content_table{
-    flex-direction: column;
-    margin-left: -450px;
-    margin-top: 100px;
-    max-width: 600px;
-}
-.repair-question-content_icons{
-    width: 50px;
-    height: 50px;
-    background: #E3B873;
-    border-radius: 50%;
-}
-.repair-question-content_icons_text{
-    font-size: 18px;
-    line-height: 25px;
-    color: white;
-    text-align: center;
-    padding-top: 12px;
-}
-.repair-question-content_text{
+.repair-question-content-table_text{
+    width: 369px;
     font-size: 14px;
     line-height: 19px;
-    color: #363636;
-    width: 380px;
-    margin-left: 20px;
-    margin-top: 5px;
-}
-.repair-question-content_table_line{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 100px;
-    width: 500px;
 }
 .repair-question-form{
     background-color: black;
@@ -402,7 +394,6 @@ body * {
     width: 500px;
     height: 500px;
     margin-top: 100px;
-    margin-left: -430px;
     padding-top: 28px;
     padding-left: 50px;
     padding-right: 50px;
@@ -434,10 +425,18 @@ body * {
 }
 .repair_button{
     width: 210px;
-    margin-left: 180px;
+    margin-left: 30px;
     height: 51px;
     margin-top: 15px;
     font-style: normal;
+    padding: 0;
+    text-align: center;
+    padding-top: 15px;
+    cursor: auto;
+}
+.repair_form_button{
+    width: 213px;
+    margin-left: 180px;
 }
 .repair-container_label{
     font-size: 14px;
@@ -446,7 +445,7 @@ body * {
     color: white;
 }
 .piggy_image{
-    margin-left: 60%;
+    margin-left: 55%;
 }
 
 /* client's section */
@@ -602,6 +601,7 @@ body * {
     font-size: 11px;
     line-height: 15px;
     color: white;
+    font-family: 'Nunito Sans';
 }
 
 /* start development mobile version */
@@ -665,10 +665,21 @@ body * {
     .project_first_image{
         width: 340px;
         height: 240px;
+        display: flex;
+        justify-content: space-between;
         margin-left: 20px;
+        align-items: center;
+        background-image: url(../images/mobile_image.png);
     }
+    .change_arrow{
+        display: inline;
+        width: 60px;
+        height: 60px;
+    }
+    
       .project-container-container{
         flex-direction: column;
+        max-width: 375px;
     }
     .project-container-container-content_subtitle{
         width: 350px;
@@ -679,6 +690,7 @@ body * {
     }
     .project-container-container-content_title{
         text-align: center;
+        padding-left: 63px;
     }
     .control-container_img_backgound{
         width: 321px;
@@ -700,13 +712,23 @@ body * {
     .control-container{
         background-color: black;
     }
+    .play {
+        margin-top: 37px;
+        width: 108px;
+    }
+    .project-container-container-content-detail{
+        margin-left: 20px;
+    }
+    .change_image{
+        display: none;
+    }
     .control-container_form {
         width: 375px;
         display: flex;
         flex-direction: column;
     }
     .control-container_form_input {
-        width: 200px;
+        width: 330px;
         background-color: initial;
         color: white;
         border-bottom: 2px solid rgba(54, 54, 54, 0.3);    }
@@ -717,7 +739,7 @@ body * {
         color: white;
     }
     .control-container_form_label_button{
-        order: 2;
+        margin-top: 10px;
     }
     .repair_image{
         width: 320px;
@@ -746,6 +768,9 @@ body * {
     .client{
         display: none;
     }
+    .contacts{
+        background-image: none;
+    }
     .contacts-container-form {
         margin-top: 0;
         padding-top: 0px;
@@ -762,8 +787,11 @@ body * {
         display: flex;
         flex-direction: column;
     }
+    .contacts-container-form_label_input {
+        width: 330px;
+    }
     .contacts-container-form_label_input_bottom {
-        width: 230px;
+        width: 330px;
     }.contacts-container-form_label_agree {
         margin-right: 0px;
     }
@@ -773,8 +801,31 @@ body * {
     .footer_button{
         display: none;
     }
+    .contact-container_title {
+        margin-top: 20px;
+        order: 2;
+    }
+    .contacts_icons {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        order: 3;
+    }
     .map{
         width: 320px;
         height: 161px;
+    }
+    .contact-container-bottom {
+        flex-direction: column;
+        display: flex;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: black;
+    }
+    .contacts_map {
+        margin-bottom: 20px;
+        order: 1;
+    }
+    .footer{
+        display: none;
     }
 }
