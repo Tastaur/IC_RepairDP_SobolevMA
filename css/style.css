@@ -223,6 +223,9 @@ body * {
     width: 680px;
     height: 482px;
 }
+.mobile_img{
+    display: none;
+}
 .change_arrow{
     display: none;
 }
@@ -322,12 +325,13 @@ body * {
     width: 681px;
 }
 .control-container_form{
-    width: 769px;
+    width: 800px;
     display: flex;
     margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .control-container_form_label{
-    margin-right: 40px;
     font-size: 13px;
     line-height: 21px;
     color: rgba(54, 54, 54, 0.5);
@@ -357,6 +361,7 @@ body * {
     width: 200px;
     background-color: white;
     color: black;
+    margin-bottom: 30px;
 }
 .control-container_form_label_button{
     width: 200px;
@@ -704,11 +709,18 @@ body * {
         display: flex;
         flex-wrap: wrap;
         padding-top: 30px;
+        background: black;
     }
     .project-container-navigation{
         display: none;
     }
     .project_first_image{
+        display: none;
+    }
+    .control-container_text {
+        margin-bottom: 80px;
+    }
+    .mobile_img{
         width: 340px;
         height: 240px;
         display: flex;
@@ -769,20 +781,27 @@ body * {
         width: 375px;
         display: flex;
         flex-direction: column;
+        margin-bottom: -25px;
     }
     .control-container_form_input {
-        width: 330px;
+        width: 355px;
         background-color: initial;
         color: white;
-        border-bottom: 2px solid rgba(54, 54, 54, 0.3);    }
+        border-bottom: 2px solid rgba(54, 54, 54, 0.3);
+    }
     .control-container_form_label {
         color: white;
+        width: auto;
+        margin-bottom: 20px;    
+
     }
     .control-container_text_input{
         color: white;
     }
     .control-container_form_label_button{
         margin-top: 10px;
+        order: 2;
+        width: 340px;
     }
     .repair_image{
         width: 320px;
