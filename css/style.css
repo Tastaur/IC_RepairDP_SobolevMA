@@ -9,7 +9,6 @@ font-family: 'YesevaOne';
 body{
     margin: 0;
     box-sizing: border-box;
-
 }
 body * {
     box-sizing: border-box;
@@ -32,9 +31,45 @@ body * {
     font-style: normal;
     font-weight: normal;
 }
-.checkbox{
-    text-align: center;
+.first-checkbox{
+    margin-top: 20px;
     margin-bottom: 20px;
+    position: relative;
+    width: 400px;
+}
+.check{
+    margin-left: 60px;
+    margin-top: 0;
+}
+.checkbox{
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 57px;
+    top: -4px;
+}
+
+.fake{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    margin-top: -4px;
+}
+
+.fake::before{
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/check.png);
+    transition: .2s;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkbox:checked + .fake::before{
+    opacity: 1;
 }
 .header-container{
     max-width: 1250px;
@@ -265,6 +300,11 @@ body * {
     line-height: 163.68%;
     color: black;
 }
+.control-container_text_input2{
+    color: white;
+    font-size: 14px;
+    line-height: 163.68%;
+}
 .control-container_line{
     border-top: 2px solid #E3B873;
     border-bottom: 0;
@@ -301,12 +341,8 @@ body * {
     color: #363636;
     width: 400px;
 }
-.check{
-    border: 1px solid #E3B873;
-    border-radius: 2px;  
-}
-.checkbox-container input:checked + span::before{
-    background-image: url(../images/check.png);  
+.checkbox-container{
+    position: relative;
 }
 .repair-label{
     align-self: left;
@@ -612,6 +648,16 @@ body * {
     .button_header{
         display: none;
     }
+    .first-checkbox{
+        width: 300px;
+        }
+    .checkbox {
+        left: 6px;
+        top: -6px;
+    }
+    .check {
+        margin-left: 35px;
+    }
     .home-container__button{
         width: 338px;
     }
@@ -673,11 +719,8 @@ body * {
     }
     .change_arrow{
         display: inline;
-        width: 60px;
-        height: 60px;
     }
-    
-      .project-container-container{
+          .project-container-container{
         flex-direction: column;
         max-width: 375px;
     }
