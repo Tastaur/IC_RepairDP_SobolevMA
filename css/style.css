@@ -800,7 +800,6 @@ body * {
     .mobile_img{
         width: 340px;
         height: 240px;
-        margin-left: 20px;
     }
     .project-container-container{
         max-width: 375px;
@@ -814,7 +813,6 @@ body * {
     }
     .project-container-container-content_title{
         text-align: center;
-        padding-left: 63px;
     }
     .control-container_img_backgound{
         width: 321px;
