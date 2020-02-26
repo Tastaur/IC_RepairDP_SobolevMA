@@ -19,6 +19,9 @@ body * {
     line-height: 15px;
     color: white;
     font-family: 'Nunito Sans';
+    position: sticky;
+    top: 0;
+    z-index: 55;
 }
 .title{
     font-family: 'YesevaOne';
