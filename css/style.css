@@ -42,11 +42,7 @@ body * {
     margin-top: 0;
 }
 .checkbox{
-    position: absolute;
-    height: 18px;
-    width: 18px;
-    left: 56px;
-    top: -6px;
+    display: none;
 }
 
 .fake{
@@ -55,6 +51,12 @@ body * {
     height: 18px;
     position: relative;
     margin-top: -4px;
+    background-color: white;
+    border: 1px solid  #E3B873;
+}
+.fake:hover{
+    background-color: #E3B873;
+    transition: .5s;
 }
 
 .fake::before{
@@ -67,6 +69,8 @@ body * {
     transition: .2s;
     opacity: 0;
     cursor: pointer;
+    top: -1px;
+    left: -1px;
 }
 .checkbox:checked + .fake::before{
     opacity: 1;
@@ -422,6 +426,7 @@ body * {
     height: 600px;
     width: 624px;
     background-image: url(../images/background_question.png);
+    background-size: cover;
 }
 .repair-question-content-table{
     margin-left: 150px;
@@ -490,7 +495,7 @@ body * {
     color: white;
 }
 .piggy_image{
-    margin-left: 55%;
+    margin-left: 61%;
 }
 
 /* client's section */
@@ -675,7 +680,6 @@ body * {
     }
     .change_arrow{
         display: inline;
-        width: 90px;
     }
     .control {
         margin-top: -230px;
@@ -908,7 +912,7 @@ body * {
         padding-right: 0px;
     }
     .contacts-container-form_label {
-        text-align: center;
+        margin-left: 25px;
         margin-right: 0px;
         margin-bottom: 50px;
     }
