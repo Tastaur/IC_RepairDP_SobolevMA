@@ -80,6 +80,7 @@ body * {
     background-color: gray;
     border-radius: 50%;
     height: 15px;
+    cursor: pointer;  
 }
 .circle_change:hover{
     background-color: white;
@@ -110,6 +111,7 @@ body * {
 }
 .header-navigation__item :hover {
     color: #E3B873;
+    transition: .2s;
  }
 .button {
     background: #E3B873;
@@ -185,7 +187,8 @@ body * {
     padding-bottom: 19px;
     padding-right: 42px;
     margin-right: 20px;
-    line-height: 15px;  
+    line-height: 15px;
+    cursor: pointer;  
 }
 .button2{
     padding-top: 19px;
@@ -227,6 +230,7 @@ body * {
     color: #E3B873;
     border-bottom: 1px #E3B873 solid;
     padding-bottom: 4px;
+    transition: .2s;
 }
 .project-container-container{
     display: flex;
