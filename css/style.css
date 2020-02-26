@@ -313,6 +313,7 @@ body * {
 }
 .play{
     margin-top: 140px;
+    cursor: pointer;
 }
 .control-container{
     justify-content: space-between;
