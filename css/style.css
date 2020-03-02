@@ -603,6 +603,13 @@ body * {
     background-size: cover;
     box-shadow: 1000px 2000px 1000px rgba(0, 0, 0, 0.7) inset
 }
+.contacts_background{
+    content: "";
+    width: auto;
+    height: 901px;
+    margin-top: -932px;
+    background-color: rgba(0, 0, 0, .7);
+}
 .contacts-container{
     display: flex;
     justify-content: center;
@@ -771,14 +778,69 @@ body * {
     .contact-container_title {
         margin-top: 10px;
     }
+    .contacts_background {
+        height: 841px;
+        margin-top: -851px;
+    }
 }
 
-
-
-@media (max-width: 375px){
+@media(max-width: 768px){
+    .header{
+        position: relative;
+    }
+    .header-navigation {
+        display: none;
+    }
     .button_header{
         display: none;
     }
+    .logo_phone{
+        margin-right: 0;
+    }
+    .control-container_img_backgound {
+        width: 750px;
+        height: 399px;
+        margin-top: -402px;
+    }
+    .control-img{
+        width: 750px;
+    }
+    .control-container_form_label {
+        width: 250px;
+    }
+    .control-container_form {
+        width: 750px;
+    }
+    .control-container_text {
+        margin-bottom: 30px;
+    }
+    .contacts-container-form {
+        width: 750px;
+        padding-top: 35px;
+        padding-left: 50px;
+        padding-bottom: 35px;
+        padding-right: 41px;
+    }
+    .map{
+        width: 750px;
+    }
+    .clients_image {
+        margin-left: 42%;
+    }
+    .client-container-content_block {
+        margin-left: 32%;
+    }
+    .contacts_background {
+        height: 843px;
+        margin-top: -763px;
+    }
+    .footer_button{
+        display: none;
+    }
+}
+
+@media (max-width: 375px){
+    
     .first-checkbox{
         width: 300px;
         }
@@ -997,6 +1059,9 @@ body * {
         order: 1;
     }
     .footer{
+        display: none;
+    }
+    .contacts_background {
         display: none;
     }
 }
