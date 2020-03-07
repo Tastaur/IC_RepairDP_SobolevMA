@@ -34,11 +34,25 @@ body * {
     font-style: normal;
     font-weight: normal;
 }
-.first-checkbox{
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+/* startSlider */
+.mobile_slider{
+    display: none;
+}
+.mainslider{
+    display: flex;
+    overflow: hidden;
+    max-width: 679px;
     position: relative;
-    width: 400px;
+}
+.slider{
+    display: flex;
+    justify-content: space-around;
+    width: 170px;
+}
+.project_first_image-hide{
+    display: none;
+    transition: .3s;
 }
 .change_arrow_slider{
     width: 70px;
@@ -59,9 +73,45 @@ body * {
     width: 300px;
     justify-content: space-between;
     display: flex;
-    margin-top: 140px;
+    margin-top: -30px;
     height:50px;
     align-items: center;
+}
+.circle_change{
+    width: 15px;
+    background-color: gray;
+    border-radius: 50%;
+    height: 15px;
+    cursor: pointer;
+    border: none;  
+}
+.circle_change-active{
+    background-color: white;
+    width: 20px;
+    height: 20px; 
+    transition: .3s;
+}
+.circle_change:hover{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    transition: .2s;
+}
+.project-container-navigation__item-active{
+    color: #E3B873;
+    border-bottom: 1px #E3B873 solid;
+    padding-bottom: 4px;
+    transition: .2s;  
+    cursor: pointer;
+    transition: .3s;
+}
+/* finishSlider */
+/* startCheckbox */
+.first-checkbox{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 400px;
 }
 .check{
     margin-left: 60px;
@@ -70,7 +120,6 @@ body * {
 .checkbox{
     display: none;
 }
-
 .fake{
     display: inline-block;
     width: 18px;
@@ -84,7 +133,6 @@ body * {
     background-color: #E3B873;
     transition: .5s;
 }
-
 .fake::before{
     content: " ";
     position: absolute;
@@ -101,19 +149,7 @@ body * {
 .checkbox:checked + .fake::before{
     opacity: 1;
 }
-.circle_change{
-    width: 15px;
-    background-color: gray;
-    border-radius: 50%;
-    height: 15px;
-    cursor: pointer;  
-}
-.circle_change:hover{
-    background-color: white;
-    width: 20px;
-    height: 20px;
-    transition: .2s;
-}
+/* finishCheckbox */
 .header-container{
     max-width: 1250px;
     margin: 0 auto;
@@ -171,7 +207,6 @@ body * {
     z-index: 1;
     position: relative;
     color: white;
-    
 }
 .home-background{
     content: "";
@@ -237,25 +272,28 @@ body * {
 .project-container{
     padding-top: 107px;
     max-width: 1440px;
+    display: flex;
 }
 .project-container-navigation{
     display: flex;
     list-style: none;
     margin-left: 40%;
+    color: rgba(255, 255, 255, 0.3);
+    height: 20px;
 }
-.project-container-navigation__item a{
+.project-container-navigation__item{
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.3);
     margin-right: 30px;
     width: max-content;
+    cursor: pointer;
 }
-.project-container-navigation__item a:hover{
+.project-container-navigation__item:hover{
     color: #E3B873;
     border-bottom: 1px #E3B873 solid;
-    padding-bottom: 4px;
+    padding-bottom: 20px;
     transition: .2s;
 }
 .project-container-container{
@@ -264,17 +302,10 @@ body * {
 }
 .project_first_image{
     margin-top: 30px;
-    background-image: url(../images/second_1.png);
-    background-size: cover;
     width: 680px;
     height: 482px;
 }
-.mobile_img{
-    display: none;
-}
-.change_arrow{
-    display: none;
-}
+
 .project-container-container-content_title{
     font-size: 27px;
     line-height: 37px;
@@ -709,24 +740,54 @@ body * {
     .project_first_image {
         display: none;
     }
-    .project-container-navigation__item a {
+    .project-container {
+        padding-top: 10px;
+    }
+    .project-container-navigation__item {
         margin-right: 10px;
     }
-    .mobile_img {
-        width: 458px;
-        height: 337px;
-        background-size: cover;
+    .mainslider{
+        display: none   ;
+    }
+   .mobile_slider{
+        position: relative;
         display: flex;
-        justify-content: space-between;
-        margin: auto;
+        max-width: 678px;
         align-items: center;
-        background-image: url(../images/mobile_image.png);
+        overflow: hidden;
     }
-    .change_arrow{
-        display: inline;
+    .mobile_slider_image_container{
+    display: flex;
+    position: relative;
+    -webkit-transition: 1s;
+    transition: 1s;
+    max-width: 750px;
     }
+    .mobile_slider_image{
+        display: block;
+        position: relative;
+    }
+    .mobile_slider_btn{
+        border: none;
+        background: none;
+        position: absolute;
+        z-index: 50;
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: 45% 50%;
+        padding: 0;
+    }
+    .mobile_slider_btn_lft{
+        background-image: url(../images/arrowOnLeft.png);
+    }
+    .mobile_slider_btn_rght{
+        background-image: url(../images/arrowonRight.png);
+        margin-left: 610px;
+    }
+ 
     .control {
-        margin-top: -230px;
+        margin-top: -88px;
     }
     .control-container_form {
         margin-bottom: 0;
@@ -784,6 +845,12 @@ body * {
 }
 
 @media(max-width: 768px){
+    .mobile_slider {
+        position: relative;
+        display: flex;
+        max-width: 679px;
+        margin-left: 34px;
+    }
     .header{
         position: relative;
     }
@@ -839,7 +906,27 @@ body * {
 }
 
 @media (max-width: 375px){
-    
+    .mobile_slider {
+        position: relative;
+        display: flex;
+        max-width: 350px;
+        margin-left: 0;
+    }
+    .mobile_slider_btn {
+        border: none;
+        padding: 0;
+    }
+    .mobile_slider_image {
+        display: block;
+        width: 350px;
+        height: 256px;
+    }
+    .mobile_slider_image_container {
+        max-width: 370px;
+    }
+    .mobile_slider_btn_rght {
+        margin-left: 296px;
+    }
     .first-checkbox{
         width: 300px;
         }
@@ -894,7 +981,7 @@ body * {
         flex-direction: column;
         display: flex;
         flex-wrap: wrap;
-        padding-top: 30px;
+        padding-top: 0px;
         background: black;
     }
     .control-container_text {
@@ -926,7 +1013,7 @@ body * {
         width: 320px;
     }
     .project{
-        height: 974px;
+        height: 708px;
     }
     .control-container_text{
         width: 320px;

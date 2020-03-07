@@ -50,19 +50,26 @@
     </section>
     <!-- second section -->
     <section class="project" id="projects">
-        <div class="project-container">
-            <ul class="project-container-navigation">
-                <li class="project-container-navigation__item"><a href="#">ROSTOV-ON-DON, ADMIRAL</a></li>
-                <li class="project-container-navigation__item"><a href="#">SOCHI THIEVES</a></li>
-                <li class="project-container-navigation__item"><a href="#">ROSTOV-ON-DON PATRIOTIC</a></li>
-            </ul>
-            <div class="project-container-container">
+        <div class="projects_container-right">
+            <div class="project-container">
+                <ul class="project-container-navigation">
+                    <li class="project-container-navigation__item "><span>ROSTOV-ON-DON, ADMIRAL</span></li>
+                    <li class="project-container-navigation__item "><span>SOCHI THIEVES</span></li>
+                    <li class="project-container-navigation__item "><span>ROSTOV-ON-DON PATRIOTIC</span></li>
+              </ul>
+            </div>
+            <div class="project-container-container" id= "main_slider">
                 <div class="project-container-container-content">
                     <h2 class="project-container-container-content_title title">COMPLETED<br>PROJECTS</h2>
                     <p class="project-container-container-content_subtitle subtitle">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction <br> market we have made happy more than 1000 families</p>
-                    <div class="mobile_img">
-                        <img src="images/arrowOnLeft.png"  class = "change_arrow"alt="">
-                        <img src="images/arrowonRight.png" class = "change_arrow" alt="">
+                    <div class="mobile_slider">
+                        <button class="mobile_slider_btn mobile_slider_btn_lft" id = "mobile_slider_left_arrow"></button>
+                        <div class="mobile_slider_image_container">
+                        <img src="images/slideImg1.png" class="mobile_slider_image" alt="" >
+                        <img src="images/slideImg2.png" class="mobile_slider_image"alt="" >
+                        <img src="images/slideImg3.png"class="mobile_slider_image" alt="" >
+                        </div>
+                        <button class="mobile_slider_btn mobile_slider_btn_rght" id = "mobile_slider_right_arrow"></button>
                     </div>
                     <div class="project-container-container-content-detail">
                         <div class="project-container-container-content-detail-content_left">
@@ -78,16 +85,21 @@
                             <span class="project-container-container-content-detail-content_subtitle subtitle">Upon request</span>
                         </div>
                     </div>
-                    <div class="change_image">
-                        <button class="change_arrow_slider" id="changeArrowLeft">&larr;</button>
-                        <div class="circle_change" id="change1"></div>
-                        <div class="circle_change" id="change2"></div>
-                        <div class="circle_change" id="change3"></div>
-                        <button class="change_arrow_slider" id="changeArrowRight">&rarr;</button>
-                    </div>
                 </div>
-               <div  class="project_first_image">
+                <div class="mainslider">
+                    <img class="project_first_image" src="images/slideImg1.png">
+                    <img class="project_first_image" src="images/slideImg2.png">
+                    <img class="project_first_image" src="images/slideImg3.png">
                 </div>
+            </div>
+            <div class="change_image">
+                <button class="change_arrow_slider" id="changeArrowLeft" >&larr;</button>
+                <div class="slider">
+                    <button class="circle_change"></button>
+                    <button class="circle_change"></button>
+                    <button class="circle_change"></button>
+                </div>
+                <button class="change_arrow_slider" id="changeArrowRight" >&rarr;</button>
             </div>
         </div>
     </section>
@@ -123,7 +135,6 @@
             </div>
             <div class="repair-container-container">
                 <div class="repair-conntainer-container-content">
-                    <!-- 1 -->
                     <img src="images/image_repair1.png" class="repair_image" alt="">
                     <div>
                         <ul class="repair-conntainer-container-content-text_title title">Redecorating
@@ -138,7 +149,6 @@
                         <div class="repair_button button title">from 900 rub / m2</div>
                     </div>
                 </div>
-                <!-- 2 -->
                 <div class="repair-conntainer-container-content">
                     <img src="images/image_repair2.png" class="repair_image" alt="">
                     <div>
@@ -154,7 +164,6 @@
                         <div class="repair_button button title">from 1800 rub / m2</div>
                     </div>
                 </div>
-                <!-- 3 -->
                 <div class="repair-conntainer-container-content">
                     <img src="images/image_repair3.png" class="repair_image" alt="">
                     <div>
@@ -271,7 +280,8 @@
         </div>
         <div class="contacts_background"></div>
     </section>
-    <script src="/app/app.js"></script>
+    <script src="app/app.js"></script>
+
     <footer class="footer">
         <div class="header-container">
             <div class="logo">
