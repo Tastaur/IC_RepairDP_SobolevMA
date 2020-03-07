@@ -910,11 +910,12 @@ body * {
 }
 
 @media (max-width: 375px){
+
     .mobile_slider {
         position: relative;
         display: flex;
         max-width: 350px;
-        margin-left: 0;
+        margin-left: 5px;
     }
     .mobile_slider_btn {
         border: none;
@@ -929,7 +930,7 @@ body * {
         max-width: 370px;
     }
     .mobile_slider_btn_rght {
-        margin-left: 296px;
+        margin-left: 280px;
     }
     .first-checkbox{
         width: 300px;
@@ -942,7 +943,7 @@ body * {
         margin-left: 35px;
     }
     .home-container__button{
-        width: 338px;
+        width: 336px;
     }
     .header-navigation{
         display: none;
@@ -1040,13 +1041,13 @@ body * {
         margin-left: 20px;
     }
     .control-container_form {
-        width: 375px;
+        width: 340px;
         display: flex;
         flex-direction: column;
         margin-bottom: -25px;
     }
     .control-container_form_input {
-        width: 355px;
+        width: 325px;
         background-color: initial;
         color: white;
         border-bottom: 2px solid rgba(54, 54, 54, 0.3);
