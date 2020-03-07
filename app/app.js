@@ -25,8 +25,8 @@ let pickCircle = () => {
 
     sliderText[0].innerText = (`Rostov-on-Don 
     LCD admiral`);
-    sliderText[1].innerText = ('81 m2');
-    sliderText[2].innerText = ('3.5 months');
+    sliderText[1].innerText = ('3.5 months');
+    sliderText[2].innerText = ('81 m2');
     sliderText[3].innerText = ('Upon request');
     linkLeft()
     cirLeft()
@@ -41,9 +41,9 @@ let pickCircle = () => {
     imgSlider[0].classList.add(`project_first_image-hide`);
     imgSlider[2].classList.add(`project_first_image-hide`);
 
-    sliderText[0].innerHTML = (`Sochi Thieves`);
-    sliderText[1].innerText = ('105 m2');
-    sliderText[2].innerText = ('4 months');
+    sliderText[0].innerHTML = (`Sochi Thieves <br><br>`);
+    sliderText[1].innerText = ('4 months');
+    sliderText[2].innerText = ('105 m2');
     sliderText[3].innerText = ('Upon request');
     linkCenter ();
     cirCenter()
@@ -58,9 +58,11 @@ let pickCircle = () => {
     imgSlider[1].classList.add(`project_first_image-hide`);
     imgSlider[0].classList.add(`project_first_image-hide`);
 
-    sliderText[0].innerText = ('Rostov-on-Don Patriotic');
-    sliderText[1].innerText = ('93 m2');
-    sliderText[2].innerText = ('3 months');
+    sliderText[0].innerText = (`Rostov-on-Don Patriotic 
+    
+    `);
+    sliderText[1].innerText = ('3 months');
+    sliderText[2].innerText = ('93 m2');
     sliderText[3].innerText = ('Upon request');
     linkRight();
     cirRight();
@@ -180,21 +182,21 @@ const mobBtnNext = document.querySelector('.mobile_slider_btn_rght').onclick = (
 let mosileSlideText = () => {
   if (mobImg == 0) {
     sliderText[0].innerHTML = (`Rostov-on-Don <br> LCD admiral`);
-    sliderText[1].innerText = ('81 m2');
-    sliderText[2].innerText = ('3.5 months');
+    sliderText[1].innerText = ('3.5 months');
+    sliderText[2].innerText = ('81 m2');
     sliderText[3].innerText = ('Upon request');
   } else if (mobImg == -100) {
-    sliderText[0].innerText = (`Rostov-on-Don
-     Patriotic`);
-    sliderText[1].innerText = ('93 m2');
-    sliderText[2].innerText = ('3 months');
-    sliderText[3].innerText = ('Upon request');
-  } else if (mobImg == -200) {
-  sliderText[0].innerText = (`Sochi Thieves 
+    sliderText[0].innerText = (`Sochi Thieves 
 
     `);
-    sliderText[1].innerText = ('105 m2');
-    sliderText[2].innerText = ('4 months');
+    sliderText[1].innerText = ('4 months');
+    sliderText[2].innerText = ('105 m2');
+    sliderText[3].innerText = ('Upon request');
+  } else if (mobImg == -200) {
+sliderText[0].innerText = (`Rostov-on-Don
+     Patriotic`);
+    sliderText[1].innerText = ('3 months');
+    sliderText[2].innerText = ('93 m2');
     sliderText[3].innerText = ('Upon request');
   } 
 }
