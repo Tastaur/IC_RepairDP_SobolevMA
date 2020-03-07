@@ -355,8 +355,8 @@ body * {
 .control-container_img_backgound{
     background: rgba(0, 0, 0, 0.8);
     width: 817px;
-    height: 434px;
-    margin-top: -439px;
+    height: 435px;
+    margin-top: -440px;
     z-index: 1;
     position: relative;
 }
