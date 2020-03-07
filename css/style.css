@@ -669,6 +669,10 @@ body * {
     justify-content: center;
     margin-bottom: 50px;
 }
+.map{
+    width: 925px;
+    height: 469px;
+}
 .contacts-container-form_label{
     text-align: start;
     margin-right: 120px;
@@ -986,6 +990,7 @@ body * {
     }
     .control-container_text {
         margin-bottom: 80px;
+  
     }
     .mobile_img{
         width: 340px;
@@ -1025,6 +1030,7 @@ body * {
         background-color: black;
         padding-left: 10px;
         align-items: center;
+        width: 375px;
     }
     .play {
         margin-top: 37px;
