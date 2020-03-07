@@ -789,7 +789,7 @@ input{
     }
     .mobile_slider_btn_rght{
         background-image: url(../images/arrowonRight.png);
-        margin-left: 610px;
+        margin-left: 628px;
     }
  
     .control {
@@ -932,7 +932,7 @@ input{
         max-width: 370px;
     }
     .mobile_slider_btn_rght {
-        margin-left: 280px;
+        margin-left: 295px;
     }
     .first-checkbox{
         width: 300px;
