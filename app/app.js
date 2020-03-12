@@ -6,7 +6,7 @@ const sliderRow = document.querySelector('.change_arrow_slider');
 const sliderText = document.querySelectorAll('.project-container-container-content-detail-content_subtitle');
 const linksSlider = document.querySelectorAll('.project-container-navigation__item');
 const imgSlider = document.querySelectorAll(`.project_first_image`);
-let slide = -1;
+let slide = 0;
 
 
 // Работа слайдера в секции Projects
