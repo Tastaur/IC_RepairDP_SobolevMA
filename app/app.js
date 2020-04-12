@@ -78,19 +78,17 @@ for (let i = 0; i < linksSlider.length; i++) {
 
 buttonSlideMin.onclick = () =>{
   --currentSlide
-  pickSlide(currentSlide)
   if(currentSlide < 0){
     currentSlide = 2
-    pickSlide(currentSlide)
   }
+  pickSlide(currentSlide)
 }
 buttonSlidePlus.onclick = () =>{
   ++currentSlide
-  pickSlide(currentSlide)
   if(currentSlide > 2){
     currentSlide = 0
-    pickSlide(currentSlide)
   }
+  pickSlide(currentSlide) 
 }
 
 
