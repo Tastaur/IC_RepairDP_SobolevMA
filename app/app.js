@@ -6,11 +6,9 @@ const sliderRow = document.querySelector('.change_arrow_slider');
 const sliderText = document.querySelectorAll('.project-container-container-content-detail-content_subtitle');
 const linksSlider = document.querySelectorAll('.project-container-navigation__item');
 const imgSlider = document.querySelectorAll(`.project_first_image`);
-let slide = 0;
 
-
-// Работа слайдера в секции Projects
-let pickCircle = () => {
+// Данные слайдера
+let pickSlide = (slide) =>{
   if (slide == 0) {
     sliderCircle[0].classList.add('circle_change-active');
     sliderCircle[1].classList.remove('circle_change-active');
@@ -21,16 +19,13 @@ let pickCircle = () => {
     imgSlider[0].classList.remove(`project_first_image-hide`);
     imgSlider[1].classList.add(`project_first_image-hide`);
     imgSlider[2].classList.add(`project_first_image-hide`);
-
-
     sliderText[0].innerText = (`Rostov-on-Don 
     LCD admiral`);
     sliderText[1].innerText = ('3.5 months');
-    sliderText[2].innerText = ('81 m2');
+    sliderText[2].innerText = ('81m2');
     sliderText[3].innerText = ('Upon request');
-    linkLeft()
-    cirLeft()
-  } else if (slide == -1) {
+
+  } else if (slide == 1) {
     sliderCircle[1].classList.add('circle_change-active');
     sliderCircle[0].classList.remove('circle_change-active');
     sliderCircle[2].classList.remove('circle_change-active');
@@ -45,9 +40,8 @@ let pickCircle = () => {
     sliderText[1].innerText = ('4 months');
     sliderText[2].innerText = ('105 m2');
     sliderText[3].innerText = ('Upon request');
-    linkCenter ();
-    cirCenter()
-  } else if (slide == -2) {
+
+  } else if (slide == 2) {
     sliderCircle[2].classList.add('circle_change-active');
     sliderCircle[1].classList.remove('circle_change-active');
     sliderCircle[0].classList.remove('circle_change-active');
@@ -64,97 +58,49 @@ let pickCircle = () => {
     sliderText[1].innerText = ('3 months');
     sliderText[2].innerText = ('93 m2');
     sliderText[3].innerText = ('Upon request');
-    linkRight();
-    cirRight();
-  } 
+
 }
-buttonSlideMin.onclick = prevSlide
-function prevSlide () {
-    slide += 1
-  if (slide > 0) {
-    slide = -2
-  };
-  sliderRow.style.slide = slide ;
-  pickCircle ()
 }
 
-buttonSlidePlus.onclick = nextSlide
-function nextSlide () {
-    slide -= 1
-  if (slide < -2) {
-    slide = 0
-  };
-  sliderRow.style.slide = slide;
-  pickCircle ()
+// Работа слайдера
+
+let currentSlide=0
+for (let i = 0; i < linksSlider.length; i++) {
+  linksSlider[i].onclick = () =>{
+    pickSlide(i)
+    currentSlide = i
+  }
+  sliderCircle[i].onclick = () =>{
+    pickSlide(i)
+    currentSlide = i
+  }
 }
 
-// Links
-linksSlider[0].onclick = () => {
-  prevSlide()
-}
-
-linksSlider[2].onclick = () => {
-  nextSlide()
-}
-function linkCenter () {
-  linksSlider[0].onclick = () => {
-    prevSlide()
-  }
-  linksSlider[2].onclick = () => {
-    nextSlide()
+buttonSlideMin.onclick = () =>{
+  --currentSlide
+  pickSlide(currentSlide)
+  if(currentSlide < 0){
+    currentSlide = 2
+    pickSlide(currentSlide)
   }
 }
-function linkLeft () {
-  linksSlider[1].onclick = () => {
-    nextSlide()
-  }
-  linksSlider[2].onclick = () => {
-    prevSlide()
-  }
-}
-function linkRight () {
-  linksSlider[1].onclick = () => {
-    prevSlide()
-  }
-  linksSlider[0].onclick = () => {
-    nextSlide()
+buttonSlidePlus.onclick = () =>{
+  ++currentSlide
+  pickSlide(currentSlide)
+  if(currentSlide > 2){
+    currentSlide = 0
+    pickSlide(currentSlide)
   }
 }
 
 
-// Circle
-function cirCenter () {
-  sliderCircle[0].onclick = () => {
-    prevSlide()
-  }
-  sliderCircle[2].onclick = () => {
-    nextSlide()
-  }
-}
-function cirLeft () {
-  sliderCircle[1].onclick = () => {
-    nextSlide()
-  }
-  sliderCircle[2].onclick = () => {
-    prevSlide()
-  }
-}
-function cirRight () {
-  sliderCircle[1].onclick = () => {
-    prevSlide()
-  }
-  sliderCircle[0].onclick = () => {
-    nextSlide()
-  }
-}
 
-sliderCircle[0].onclick = () => {
-  prevSlide()
-}
 
-sliderCircle[2].onclick = () => {
-  nextSlide()
-}
+
+
+
+
+
 
 
 //mobile
