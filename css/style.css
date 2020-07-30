@@ -139,6 +139,10 @@ input {
     color: white;
     cursor: pointer;
 }
+.camera{
+    margin: 5px auto;
+    width: 100px;
+}
 
 .logo {
     color: #E3B873;
